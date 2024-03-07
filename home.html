@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Work</title>
+    <!--External CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<input type="checkbox" id="check">
+<label for="check">
+<strong id="bars">&#9776;</strong>
+</label>
+<nav class="sidebar">
+    <p>I love coding<img src="images/aloko.jpg" alt="picture"></p>
+    <p id="time"></p>
+    <ul>
+        <li><a href="college.html">My School</a></li>
+        <li><a href="about.html">About Me</a></li>
+    </ul>
+   </nav>
+ <main>
+    <section id="bgVideo">
+        <video src="videos/sg1.mp4" controls autoplay muted loop></video>
+    </section>
+ </main>
+ <script src="App.js"></script>
+ <script>
+    setInterval(function(){
+        const time = document.getElementById('time');
+        time.innerHTML=new Date().toLocaleTimeString();
+    })
+ </script>
+</body>
+</html>
